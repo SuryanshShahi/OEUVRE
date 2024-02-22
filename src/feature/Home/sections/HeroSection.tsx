@@ -27,7 +27,6 @@ const HeroSection = () => {
   ];
   return (
     <div className="space-y-28">
-    
       <div className="space-y-10 md:mt-20 mt-10 container mx-auto px-5">
         <div className="text-center max-w-[850px] mx-auto space-y-4">
           <div className="text-5xl font-bold leading-[60px]">
@@ -55,7 +54,7 @@ const HeroSection = () => {
           ></div>
         </div>
       </div>
-     
+
       <div className="relative bg-neutral-100 py-20 px-5">
         <p className="md:text-4xl text-3xl text-center md:leading-[60px] leading-[50px] container mx-auto md:px-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -206,7 +205,7 @@ const HeroSection = () => {
       <div className="relative bg-neutral-100 py-20 px-5 overflow-hidden">
         <div className="text-center space-y-4">
           <div className="text-5xl font-bold leading-[60px]">
-            Styles That Welcome's Sunshine's Return
+            Styles That Welcome&apos;s Sunshine&apos;s Return
           </div>
           <p className="text-gray-800 max-w-[800px] mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
