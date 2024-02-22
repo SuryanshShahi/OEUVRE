@@ -2,32 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+#navbar.active {
+  animation: fadeNav 0.7s linear forwards;
+  @apply shadow-md;
+}
+@keyframes fadeNav {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-type-1 {
+  clip-path: polygon(
+    0 0,
+    47% 0,
+    47% 10%,
+    73% 10%,
+    73% 20%,
+    100% 20%,
+    100% 100%,
+    0 100%
+  );
+}
+
+.card-type-2 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 54% 100%, 43% 89%, 0 89%);
+}
+
+#sideBar {
+  animation: sideNav 0.4s linear forwards;
+  z-index: 999;
+}
+
+@keyframes sideNav {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-sidebar {
+  animation: accordion 0.3s ease;
+}
+@keyframes accordion {
+  from {
+    opacity: 0;
+    margin-left: -100%;
+  }
+  to {
+    opacity: 1;
   }
 }
