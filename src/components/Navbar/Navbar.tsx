@@ -25,9 +25,8 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
         <div className="lg:flex hidden items-center gap-x-8">
           {["New Arrivals", "All Product", "Blogs", "Contact Us"]?.map(
             (item, idx) => (
-              <div className="group">
+              <div className="group" key={idx}>
                 <div
-                  key={idx}
                   className={`cursor-pointer ${
                     activeTab === idx && "font-bold"
                   }`}
