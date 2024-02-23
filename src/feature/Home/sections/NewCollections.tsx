@@ -16,7 +16,7 @@ const NewCollections = () => {
             className="rounded-3xl h-[350px] w-full object-cover"
           />
           <div className="font-semibold text-[18px]">
-            labore et dolore magna
+            Work of Art
           </div>
           <div className="text-xs">labore et dolore</div>
         </div>
