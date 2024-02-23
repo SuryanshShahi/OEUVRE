@@ -1,4 +1,5 @@
 import Button from "@/shared/Button/Button";
+import Img from "@/shared/Img";
 import React, { useState } from "react";
 
 const HeroSection = () => {
@@ -59,20 +60,32 @@ const HeroSection = () => {
         <p className="md:text-4xl text-3xl text-center md:leading-[60px] leading-[50px] container mx-auto md:px-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod ut labor
-          <img
+          <Img
             src="/images/vr.webp"
-            className="md:h-10 h-8 w-24 float-start mt-3 rounded-full"
+            alt="image"
+            height={32}
+            width={96}
+            className="md:h-10 float-start mt-3 rounded-full"
+            isLocal
           />
           tempor incididunt et Lorem ipsum dolor sit amet, consectetur
           adipiscing elit,
-          <img
+          <Img
             src="/images/vr.webp"
-            className="md:h-10 h-8 w-24 float-right mt-3 rounded-full"
+            alt="image"
+            height={32}
+            width={96}
+            className="md:h-10 float-right mt-3 rounded-full"
+            isLocal
           />
           sed do eiusmod ut labore tempor incididunt
-          <img
+          <Img
             src="/images/vr.webp"
-            className="md:h-10 h-8 w-24 float-start mt-3 rounded-full"
+            alt="image"
+            height={32}
+            width={96}
+            className="md:h-10 float-start mt-3 rounded-full"
+            isLocal
           />
           et sed do eiusmod ut labore tempor incididunt et
         </p>
@@ -214,42 +227,78 @@ const HeroSection = () => {
             aliquip ex ea commodo consequat.
           </p>
           <div className="flex -ml-20 !mt-14">
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl -rotate-12"
+              height={280}
+              width={220}
+              isLocal
             />
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl rotate-6 -ml-5"
+              height={280}
+              width={220}
+              isLocal
             />
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl -rotate-[15deg] -ml-5 mt-3"
+              height={280}
+              width={220}
+              isLocal
             />
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl rotate-[20deg] -ml-5 mt-3"
+              height={280}
+              width={220}
+              isLocal
             />
 
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl -rotate-[22deg] -ml-5 mt-3"
+              height={280}
+              width={220}
+              isLocal
             />
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl rotate-6 -ml-5"
+              height={280}
+              width={220}
+              isLocal
             />
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl -rotate-[15deg] -ml-5 mt-3"
+              height={280}
+              width={220}
+              isLocal
             />
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl rotate-[20deg] -ml-5 mt-3"
+              height={280}
+              width={220}
+              isLocal
             />
-            <img
+            <Img
               src="/images/vr.webp"
+              alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl -rotate-[20deg] -ml-10 mt-3"
+              height={280}
+              width={220}
+              isLocal
             />
           </div>
         </div>
