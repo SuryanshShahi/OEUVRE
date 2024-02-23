@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className="space-y-10 md:mt-20 mt-10 max-w-[1140px] mx-auto px-5">
       <div className="text-center max-w-[850px] mx-auto space-y-4">
-        <div className="text-5xl font-bold leading-[60px]">
+        <div className="text-5xl font-bold leading-[60px] font-Luxyna">
           Experience Timeless Luxury, Redefined for Women
         </div>
         <p className="text-gray-800">

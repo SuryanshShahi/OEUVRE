@@ -1,8 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: AverageSans;
+  src: url(/font/AverageSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Luxyna;
+  src: url(/font/LUXYNA.ttf);
+}
 
 * {
+  font-family: AverageSans;
   scroll-behavior: smooth;
 }
 
