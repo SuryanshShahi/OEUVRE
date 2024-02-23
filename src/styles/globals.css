@@ -6,11 +6,6 @@
   src: url(/font/Intrepid.ttf);
 }
 
-@font-face {
-  font-family: Luxyna;
-  src: url(/font/LUXYNA.ttf);
-}
-
 * {
   font-family: Intrepid;
   scroll-behavior: smooth;
@@ -19,6 +14,7 @@
 
 body {
   font-size: 18px;
+  background-color: #18191d;
 }
 
 .animate-bottom {
@@ -52,7 +48,7 @@ body {
 
 #navbar.active {
   animation: fadeNav 0.7s linear forwards;
-  @apply shadow-md;
+  @apply shadow-md bg-[#18191d];
 }
 @keyframes fadeNav {
   0% {

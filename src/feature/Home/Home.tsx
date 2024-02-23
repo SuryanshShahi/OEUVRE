@@ -32,7 +32,7 @@ const Home = () => {
     },
   ];
   return (
-    <div className="space-y-28">
+    <div className="space-y-28  text-white">
       <HeroSection />
       <PerfectOutfit />
       <NewCollections />

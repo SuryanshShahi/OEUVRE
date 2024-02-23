@@ -1,53 +1,19 @@
-// import Img from "@/shared/Img";
-// import React from "react";
-
-// const PerfectOutfit = () => {
-//   return (
-//     <div className="relative bg-neutral-100 py-20 px-5">
-//       <p className="md:text-4xl text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10">
-//       Elevate your style game to new heights with our exclusive collection
-//         <Img
-//           src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4361.jpg"
-//           alt="image"
-//           height={32}
-//           width={96}
-//           className="md:h-10 float-start mt-3 rounded-full object-cover "
-//           isLocal
-//         />
-//         Each garment tells a unique story, meticulously designed to reflect
-//         <Img
-//           src="/images/vr.webp"
-//           alt="image"
-//           height={32}
-//           width={96}
-//           className="md:h-10 float-right mt-3 rounded-full"
-//           isLocal
-//         />
-//         the essence of modern <b>luxury</b> 
-//         <Img
-//           src="/images/vr.webp"
-//           alt="image"
-//           height={32}
-//           width={96}
-//           className="md:h-10 float-start mt-3 rounded-full"
-//           isLocal
-//         />
-//         while embracing the beauty of artistic exploration.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default PerfectOutfit;
-
 import Img from "@/shared/Img";
 import React from "react";
 
 const PerfectOutfit = () => {
   return (
-    <div className="relative bg-neutral-100 py-20 px-5">
-      <p className="md:text-4xl text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10 ">
-        Elevate your style game to new heights with our exclusive collection. <br/> Each <b className="">garment</b> 
+    <div
+      className="relative bg-primary py-20 px-5 bg-cover bg-fixed"
+      style={{
+        backgroundImage:
+          "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4348.jpg?updatedAt=1708690315415')",
+      }}
+    >
+      <div className="bg-[rgb(0,0,0,0.6)] w-full h-full absolute left-0 top-0"></div>
+      <p className="md:text-4xl z-10 relative text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10">
+        Elevate your style game to new heights with our exclusive collection.
+        <br /> Each <span className="font-bold">garment</span>
         <Img
           src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4221.jpg"
           alt="image"
@@ -56,7 +22,8 @@ const PerfectOutfit = () => {
           className="md:h-10 inline-block rounded-full object-cover mx-2 my-3"
           isLocal
         />
-        tells a unique <b className="">story</b>, meticulously designed
+        tells a unique <span className="font-bold">story</span>, meticulously
+        designed
         <Img
           src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4326.jpg"
           alt="image"
@@ -65,7 +32,8 @@ const PerfectOutfit = () => {
           className="md:h-10 inline-block rounded-full object-cover mx-2 my-3"
           isLocal
         />
-        to reflect the essence of modern <b className="">luxury</b>
+        to reflect the essence of modern
+        <span className="font-bold">luxury</span>
         <Img
           src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4023.jpg"
           alt="image"

@@ -1,4 +1,4 @@
-import { FC, Fragment, PropsWithChildren, useState } from "react";
+import { FC, PropsWithChildren, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { IoIosArrowUp } from "react-icons/io";
@@ -11,7 +11,6 @@ interface IPageWraps {
 const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   children,
   wrapperClass,
-  isBanner,
   isNavbar,
 }) => {
   const [isActive, setIsActive] = useState(false);
@@ -26,15 +25,13 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   return (
     <div className="animate-bottom">
       {!isNavbar && <Navbar />}
-      <div className={`bg-white ${wrapperClass}`}>
-        {children}
-      </div>
+      <div className={wrapperClass}>{children}</div>
       {isActive && (
         <div
-          className="z-10 w-12 h-8 hover:h-10 duration-300 bottom-0 right-10 rounded-t-md fixed cursor-pointer bg-black flex items-center justify-center"
+          className="z-10 w-12 h-8 hover:h-10 duration-300 bottom-0 right-10 rounded-t-md fixed cursor-pointer bg-heading flex items-center justify-center"
           onClick={() => window.scroll(0, 0)}
         >
-          <IoIosArrowUp color="white" />
+          <IoIosArrowUp />
         </div>
       )}
       <Footer />

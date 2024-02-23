@@ -4,11 +4,13 @@ const RaiseStandards = () => {
   return (
     <div className="space-y-10 sm:mt-20 mt-10 max-w-[1140px] mx-auto px-5">
       <div className="text-center max-w-[850px] mx-auto space-y-4">
-        <div className="text-5xl font-bold leading-[60px] " >
-        Enhance your style prowess
+        <div className="text-5xl font-bold leading-[60px]">
+          Enhance your style prowess
         </div>
-        <p className="text-gray-800">
-        At Oeuvre, we believe in making a statement beyond fashion. Our collections are curated to inspire confidence, provoke thought, and ignite a sense of cultural evolution.
+        <p className="text-secondary">
+          At Oeuvre, we believe in making a statement beyond fashion. Our
+          collections are curated to inspire confidence, provoke thought, and
+          ignite a sense of cultural evolution.
         </p>
       </div>
       <div className="flex max-[1024px]:flex-wrap sm:text-start text-center sm:justify-between justify-center items-center gap-5 !mt-8">

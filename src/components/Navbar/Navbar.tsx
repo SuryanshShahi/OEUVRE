@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/shared/Button/Button";
 import React, { useState } from "react";
 import useNavbar from "./views/useNavbar";
@@ -12,10 +13,11 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
     { name: "Blog", route: "/blog" },
   ];
   const [activeTab, setActiveTab] = useState(0);
+
   return (
     <>
       <div
-        className={`top-0 sticky flex bg-white justify-between p-5 items-center w-full z-50 ${navClass}`}
+        className={`top-0 sticky flex text-white justify-between p-5 items-center w-full z-50 ${navClass}`}
         id="navbar"
       >
         <div className="font-black text-2xl">OEUVRE</div>
@@ -25,7 +27,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
               <div className="group" key={idx}>
                 <div
                   className={`cursor-pointer ${
-                    activeTab === idx && "font-bold"
+                    activeTab === idx && "font-bold text-[#C4EF17]"
                   }`}
                 >
                   {item}
@@ -33,7 +35,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
                 <div
                   className={`${
                     activeTab === idx ? "w-5" : "w-0 group-hover:w-5"
-                  } h-[2px] duration-300 bg-black mx-auto`}
+                  } h-[2px] duration-300 bg-[#C4EF17] mx-auto`}
                 ></div>
               </div>
             )
@@ -42,13 +44,14 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
         <div className="w-fit md:flex hidden items-center group relative lg:absolute lg:right-44">
           <FiSearch
             size={24}
-            className="absolute right-3 cursor-pointer z-10"
+            className="absolute right-3 cursor-pointer hover:text-black z-10"
           />
           <input
             className="outline-none bg-neutral-100 group-hover:w-[250px] duration-700 w-[50px] group-hover:opacity-[1] opacity-0 rounded-full text-black pl-5 group-hover:pr-10 h-12"
             placeholder="Enter Email"
           />
         </div>
+
         <Button className="lg:flex hidden">Get Started</Button>
         <GiHamburgerMenu
           size={28}

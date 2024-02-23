@@ -10,24 +10,14 @@ const styles = {
   buttonName: "absolute left-6",
   buttonWrapper:
     "absolute left-[-0.4rem] z-[1] w-20 transition-all duration-500 hover:left-[-15px]",
-  buttonClass: (
-    fullWidth?: boolean,
-    size?: string,
-    className?: string,
-    isDisabled?: boolean,
-    noHover?: boolean
-  ) =>
+  buttonClass: (fullWidth?: boolean, size?: string, className?: string) =>
     clsx(
-      "h-max font-sensei rounded-full text-white bg-black duration-500 py-2 px-7 text-base",
-      fullWidth && "w-full",
+      "h-max font-sensei rounded-full border-2 hover:text-black hover:bg-white border-white bg-transparent text-white duration-500 py-2 px-7 text-base",
       {
         "p-1 text-sm": size === "sm",
         "p-3 text-lg": size === "lg",
       },
-      className,
-      isDisabled && "cursor-not-allowed bg-gray-200 !text-[#A3A3A3]",
-      noHover && "lg:hover:transition-none",
-      !isDisabled && "hover:bg-black/60"
+      className
     ),
   arrows: {
     next: "absolute -bottom-16 right-[35%] w-fit z-50 bg-sliderArrow p-2 lg:hover:bg-sliderArrow/70 min-[700px]:right-4",

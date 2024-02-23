@@ -3,18 +3,14 @@ import React from "react";
 
 const NewsLetter = () => {
   return (
-    <div
-      className="bg-cover text-white text-center py-14 relative px-5 !mt-0"
-      style={{ backgroundImage: "url('/images/vr.webp')" }}
-    >
-      <div className="bg-[rgb(0,0,0,0.6)] w-full h-full absolute left-0 top-0"></div>
+    <div className="bg-cover text-white text-center py-14 bg-primary b-fixed px-5 !mt-0">
       <div className="relative space-y-8">
         <div className="sm:text-[36px] text-3xl font-medium sm:leading-[50px] max-w-[900px] mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore.
         </div>
         <div className="relative w-fit mx-auto">
-          <Button className="!rounded-full py-3 !px-11 absolute top-0 right-0">
+          <Button className="py-[10px] !px-11 absolute top-[1px] !text-white right-0 !bg-black">
             Send
           </Button>
           <input
