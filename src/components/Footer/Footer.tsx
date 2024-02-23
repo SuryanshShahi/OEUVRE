@@ -11,9 +11,9 @@ const Footer = () => {
         <div>Privacy</div>
       </div>
       <div className="flex gap-x-5 justify-center items-center">
-        <FaTwitter />
-        <AiFillInstagram />
-        <FaLinkedin />
+        <FaTwitter className="hover:rotate-[360deg] duration-500 cursor-pointer" />
+        <AiFillInstagram className="hover:rotate-[360deg] duration-500 cursor-pointer" />
+        <FaLinkedin className="hover:rotate-[360deg] duration-500 cursor-pointer" />
       </div>
     </div>
   );
