@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className="space-y-10 md:mt-20 mt-10 max-w-[1250px] mx-auto px-5 bg">
       <div className="text-center max-w-[850px] mx-auto space-y-4">
         <div className="text-5xl font-bold leading-[60px]">
-        Experience the Epitome of Luxury, Where Fashion Meets Art
+        Experience the Epitome of Luxury, Where Fashion Meets Art!!
         </div>
         <p className="text-gray-800">
         Indulge in the fusion of luxury and artistry with Oeuvre- a testament to the confluence of fashion creativity, creativity, and individuality.
