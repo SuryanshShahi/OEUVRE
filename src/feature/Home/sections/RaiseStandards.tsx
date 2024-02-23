@@ -2,7 +2,7 @@ import React from "react";
 
 const RaiseStandards = () => {
   return (
-    <div className="space-y-10 sm:mt-20 mt-10 container mx-auto px-5">
+    <div className="space-y-10 sm:mt-20 mt-10 max-w-[1140px] mx-auto px-5">
       <div className="text-center max-w-[850px] mx-auto space-y-4">
         <div className="text-5xl font-bold leading-[60px]">
           Made To Raise Your Standards

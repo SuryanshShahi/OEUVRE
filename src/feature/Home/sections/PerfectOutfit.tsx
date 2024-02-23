@@ -4,7 +4,7 @@ import React from "react";
 const PerfectOutfit = () => {
   return (
     <div className="relative bg-neutral-100 py-20 px-5">
-      <p className="md:text-4xl text-3xl text-center md:leading-[60px] leading-[50px] container mx-auto md:px-10">
+      <p className="md:text-4xl text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         ut labor
         <Img

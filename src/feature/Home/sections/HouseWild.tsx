@@ -11,15 +11,15 @@ const HouseWild = ({
   setIsActive: (idx: number) => void;
 }) => {
   return (
-    <div className="grid md:grid-cols-2">
+    <div className="grid md:grid-cols-2 bg-neutral-100">
       <div
-        className="justify-center flex flex-col items-center text-white w-full bg-cover min-h-[400px]"
+        className="justify-center flex flex-col items-center text-white w-full bg-cover h-[673px]"
         style={{ backgroundImage: "url('/images/vr.webp')" }}
       >
         <div className="text-start font-semibold text-3xl">HOUSEWILDS</div>
         <div className="text-start text-sm">HSAHJKDFASHDH</div>
       </div>
-      <div className="max-w-sm m-auto md:py-32 py-20">
+      <div className="max-w-lg m-auto md:py-36 py-20 px-5">
         <div className="text-xs">asdsd</div>
         <div className="text-3xl font-bold my-2">Every mom deserves</div>
         <div className="">asdsd adasd</div>
@@ -29,8 +29,8 @@ const HouseWild = ({
             {data?.map((item: any, idx: number) => (
               <div
                 key={idx}
-                className={`cursor-pointer font-semibold ${
-                  isActive === idx ? "border-b-2 border-b-black" : ""
+                className={`cursor-pointer font-semibold border-b-2 ${
+                  isActive === idx ? "border-b-black" : " border-b-transparent"
                 }`}
                 onClick={() => setIsActive(idx)}
               >
@@ -38,7 +38,10 @@ const HouseWild = ({
               </div>
             ))}
           </div>
-          <div className="text-sm font-light mt-3">
+          <div
+            className="text-sm font-light mt-3 line-clamp-5 h-[100px]"
+            tool-tip={data[isActive]?.tabContent}
+          >
             {data[isActive]?.tabContent}
           </div>
         </div>

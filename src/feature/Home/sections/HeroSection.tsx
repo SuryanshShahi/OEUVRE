@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="space-y-10 md:mt-20 mt-10 container mx-auto px-5">
+    <div className="space-y-10 md:mt-20 mt-10 max-w-[1140px] mx-auto px-5">
       <div className="text-center max-w-[850px] mx-auto space-y-4">
         <div className="text-5xl font-bold leading-[60px]">
           Experience Timeless Luxury, Redefined for Women
@@ -16,7 +16,7 @@ const HeroSection = () => {
       </div>
       <div className="flex max-[1024px]:flex-wrap sm:justify-between justify-center items-center gap-5 !mt-8">
         <div
-          className="card-type-2 h-[350px] rounded-2xl bg-cover w-full max-w-[250px]"
+          className="card-type-2 h-[350px] rounded-2xl bg-cover w-full max-w-[300px]"
           style={{ backgroundImage: "url('/images/vr.webp')" }}
         ></div>
         <div
