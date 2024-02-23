@@ -3,7 +3,7 @@ import React from "react";
 const NewCollections = () => {
   return (
     <div className="text-center space-y-4 max-w-[1024px] mx-auto px-5">
-      <div className="text-5xl leading-[60px] font-Luxyna">
+      <div className="text-5xl leading-[60px] ">
         Our Inaugral Line
       </div>
       <p className="text-gray-800 max-w-[800px] mx-auto">
@@ -23,7 +23,7 @@ const NewCollections = () => {
 
         <div
           className="max-w-[350px] max-[1024px]:order-last rounded-3xl card-type-2 gap-2 justify-center flex flex-col items-center text-white h-[430px] w-full bg-cover"
-          style={{ backgroundImage: "url('/images/vr.webp')" }}
+          style={{ backgroundImage: "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4080.jpg?tr=h-860')" }}
         >
           <div className="font-semibold text-3xl">HOUSEWILDS</div>
           <div className="text-sm">HSAHJKDFASHDH</div>

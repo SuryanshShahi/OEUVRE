@@ -16,11 +16,11 @@ const HouseWild = ({
         className="justify-center flex flex-col items-center text-white w-full bg-cover h-[673px]"
         style={{ backgroundImage: "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4189.jpg?tr=w-1424,h-1346,fo-center')" }}
       >
-        <div className="text-start font-semibold text-3xl">OEUVRE</div>
+        <div className="text-start font-bold text-3xl">OEUVRE</div>
         <div className="text-start text-sm">WORK OF ART</div>
       </div>
       <div className="max-w-lg m-auto md:py-36 py-20 px-5">
-        <div className="text-xs">asdsd</div>
+        <div className="text-xs">EXPERIENCE CRAFTSMANSHIP</div>
         <div className="text-3xl font-bold my-2">Crafted for the discerning</div>
         <div className="">Founded on the belief that fashion is a canvas for self-expression, our mission is to showcase the intersection of luxury and art through every meticulously crafted piece.
         <br />
@@ -50,7 +50,7 @@ const HouseWild = ({
           </div>
         </div> */}
         <Button className="w-full bg-transparent mt-10 !rounded-full border-black border-2 !text-black hover:!text-white hover:!bg-black">
-          Show your excitement!
+          SHOW YOUR EXCITEMENT
         </Button>
       </div>
     </div>

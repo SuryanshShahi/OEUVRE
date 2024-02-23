@@ -5,7 +5,7 @@ const Sunshine = () => {
   return (
     <div className="relative bg-neutral-100 py-20 overflow-hidden">
       <div className="text-center space-y-4">
-        <div className="text-5xl leading-[60px] font-Luxyna">
+        <div className="text-5xl leading-[60px] font-bold">
         Luxury that blends with comfort
         </div>
         <p className="text-gray-800 max-w-[800px] mx-auto">

@@ -46,28 +46,28 @@ import React from "react";
 const PerfectOutfit = () => {
   return (
     <div className="relative bg-neutral-100 py-20 px-5">
-      <p className="md:text-4xl text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10 font-Luxyna">
-        Elevate your style game to new heights with our exclusive collection. <br/> Each <b className="font-Luxyna">garment</b> 
+      <p className="md:text-4xl text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10 ">
+        Elevate your style game to new heights with our exclusive collection. <br/> Each <b className="">garment</b> 
         <Img
-          src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4361.jpg"
+          src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4221.jpg"
           alt="image"
           height={32}
           width={96}
           className="md:h-10 inline-block rounded-full object-cover mx-2 my-3"
           isLocal
         />
-        tells a unique <b className="font-Luxyna">story</b>, meticulously designed
+        tells a unique <b className="">story</b>, meticulously designed
         <Img
-          src="/images/vr.webp"
+          src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4326.jpg"
           alt="image"
           height={32}
           width={96}
           className="md:h-10 inline-block rounded-full object-cover mx-2 my-3"
           isLocal
         />
-        to reflect the essence of modern <b className="font-Luxyna">luxury</b>
+        to reflect the essence of modern <b className="">luxury</b>
         <Img
-          src="/images/vr.webp"
+          src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4023.jpg"
           alt="image"
           height={32}
           width={96}
