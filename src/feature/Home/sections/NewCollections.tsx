@@ -3,13 +3,11 @@ import React from "react";
 const NewCollections = () => {
   return (
     <div className="text-center space-y-4 max-w-[1024px] mx-auto px-5">
-      <div className="text-5xl font-bold leading-[60px]">
-        New Collection of Us
+      <div className="text-5xl leading-[60px] font-Luxyna">
+        Our Inaugral Line
       </div>
       <p className="text-gray-800 max-w-[800px] mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation
+      From concept to creation, we prioritize precision, ensuring that every stitch, fabric, and detail contributes to a masterpiece that stands the test of time.
       </p>
       <div className="flex max-[1024px]:flex-wrap sm:text-start text-center sm:justify-between justify-center items-center gap-5 !mt-8">
         <div className="max-w-[300px]">
