@@ -14,8 +14,7 @@ const NewsLetter = () => {
     >
       <div className="relative space-y-8">
         <div className="sm:text-[36px] text-3xl font-medium sm:leading-[50px] max-w-[900px] mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore.
+        Enroll and become a member of our website to unlock member benefits and access exclusive deals.
         </div>
         <div className="relative w-fit mx-auto">
           <Button className="py-[10px] !px-11 absolute top-[1px] !text-white right-0 !bg-black">
@@ -26,7 +25,7 @@ const NewsLetter = () => {
             placeholder="Enter Email"
           />
         </div>
-        <div>asdasdsad asd dadasd</div>
+        <div>SIGN UP AND SAVE</div>
       </div>
     </motion.div>
   );

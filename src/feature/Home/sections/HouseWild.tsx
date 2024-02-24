@@ -31,8 +31,8 @@ const HouseWild = ({
             "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4189.jpg?tr=w-1424,h-1346,fo-center')",
         }}
       >
-        <div className="text-start font-bold text-3xl">OEUVRE</div>
-        <div className="text-start text-sm ">WORK OF ART</div>
+        <div className="text-start font-bold text-3xl">O E U V R E</div>
+        <div className="text-start text-sm ">W O R K  O F A R T</div>
       </motion.div>
       <motion.div
         viewport={{ once: false }}
@@ -41,7 +41,7 @@ const HouseWild = ({
         initial="hidden"
         className="max-w-lg m-auto md:py-36 py-20 px-5"
       >
-        <div className="text-xs text-heading">asdsd</div>
+        <div className="text-xs text-heading">Own the Future. Own Oeuvre.</div>
         <div className="text-3xl font-bold my-2">
           Crafted for the discerning
         </div>

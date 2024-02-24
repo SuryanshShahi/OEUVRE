@@ -26,11 +26,11 @@ const NewCollections = () => {
           className="max-w-[300px]"
         >
           <img
-            src="/images/vr.webp"
+            src="https://ik.imagekit.io/designkrunch/Oeuvre/051A3934.jpg?tr=w-600"
             className="rounded-3xl h-[350px] w-full object-cover"
           />
-          <div className="font-semibold text-[18px]">Work of Art</div>
-          <div className="text-xs">labore et dolore</div>
+          <div className="font-semibold text-[18px]">Where Art Meets Apparel</div>
+          <div className="text-xs">Unveil the Oeuvre Masterpiece.</div>
         </motion.div>
 
         <motion.div
@@ -44,8 +44,8 @@ const NewCollections = () => {
               "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4080.jpg?tr=h-860')",
           }}
         >
-          <div className="font-semibold text-3xl">HOUSEWILDS</div>
-          <div className="text-sm">HSAHJKDFASHDH</div>
+          <div className="font-semibold text-3xl">O E U V R E</div>
+          <div className="text-sm">W O R K O F A R T</div>
         </motion.div>
 
         <motion.div
@@ -56,13 +56,13 @@ const NewCollections = () => {
           className="max-w-[300px]"
         >
           <img
-            src="/images/vr.webp"
+            src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4304.jpg?tr=w-600"
             className="rounded-3xl h-[350px] w-full object-cover"
           />
           <div className="font-semibold text-[18px]">
-            labore et dolore magna
+          Limited Edition Drops
           </div>
-          <div className="text-xs">labore et dolore</div>
+          <div className="text-xs">Curated Luxury Streetwear.</div>
         </motion.div>
       </div>
     </motion.div>

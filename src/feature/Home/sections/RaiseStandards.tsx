@@ -30,13 +30,13 @@ const RaiseStandards = () => {
           className="max-w-[250px]"
         >
           <img
-            src="/images/vr.webp"
+            src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4374.jpg?tr=h-600"
             className="rounded-2xl h-[300px] w-full object-cover"
           />
           <div className="font-semibold text-[18px]">
-            labore et dolore magna
+          Oeuvre is more than a brand
           </div>
-          <div className="text-xs">labore et dolore</div>
+          <div className="text-xs">Its a community</div>
         </motion.div>
 
         <motion.div
@@ -45,10 +45,10 @@ const RaiseStandards = () => {
           whileInView="show"
           initial="hidden"
           className="max-[1024px]:order-last rounded-2xl card-type-2 gap-2 justify-center flex flex-col items-center text-white h-[400px] w-full bg-cover"
-          style={{ backgroundImage: "url('/images/vr.webp')" }}
+          style={{ backgroundImage: "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4201.jpg?tr=w-560,h-400,l-image,i-ik_canvas,bg-00000030,w-560,h-400,l-end')" }}
         >
-          <div className="font-semibold text-3xl">HOUSEWILDS</div>
-          <div className="text-sm">HSAHJKDFASHDH</div>
+          <div className="font-semibold text-3xl">O E U V R E</div>
+          <div className="text-sm">W O R K O F  A R T</div>
         </motion.div>
 
         <motion.div
@@ -59,13 +59,13 @@ const RaiseStandards = () => {
           className="max-w-[250px]"
         >
           <img
-            src="/images/vr.webp"
+            src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4131.jpg?tr=h-600"
             className="rounded-2xl h-[300px] w-full object-cover"
           />
           <div className="font-semibold text-[18px]">
-            labore et dolore magna
+          It is about pushing boundaries
           </div>
-          <div className="text-xs">labore et dolore</div>
+          <div className="text-xs">and owning your individuality</div>
         </motion.div>
       </div>
     </motion.div>
