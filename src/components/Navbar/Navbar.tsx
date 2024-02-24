@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { SiOpenbadges } from "react-icons/si";
 import Img from "@/shared/Img";
 import { IoMailOutline } from "react-icons/io5";
+// import { FiSearch } from "react-icons/fi";
 
 const Navbar = ({ navClass }: { navClass?: string }) => {
   const { isActive, setIsActive } = useNavbar();
@@ -75,8 +76,8 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
           className="hidden"
           onClick={() => setIsActive(!isActive)}
         />
-        <a href="mailto:oeuvreclothinglondon@gmail.com">
-          <IoMailOutline size={28} className="lg:hidden text-[#aaa]" />
+        <a href="mailto:oeuvreclothinglondon@gmail.com" className="lg:hidden">
+          <IoMailOutline size={28} className="text-[#aaa]" />
         </a>
       </div>
       {isActive && (
@@ -113,7 +114,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
           <div className="relative w-fit flex items-center mx-auto group">
             <SiOpenbadges
               size={24}
-              className="absolute right-3 cursor-pointer z-10 group-hover:text-black"
+              className="absolute right-3 cursor-pointer z-10"
             />
             <input
               className="outline-none bg-neutral-100 group-hover:w-[268px] duration-700 w-[50px] group-hover:opacity-[1] opacity-0 rounded-full text-black pl-5 group-hover:pr-10 h-12"
