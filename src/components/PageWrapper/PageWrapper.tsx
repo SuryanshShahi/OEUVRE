@@ -2,17 +2,18 @@ import { FC, PropsWithChildren, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { IoIosArrowUp } from "react-icons/io";
-import { motion } from "framer-motion";
-import { HeroVariants } from "@/utils/framerVariants";
+import { Head } from "next/document";
+import { metaContent } from "@/utils/constant";
 interface IPageWraps {
   wrapperClass?: string;
   isBanner?: boolean;
-  isNavbar?: boolean;
+  seo?: any;
 }
 
 const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   children,
   wrapperClass,
+  seo,
 }) => {
   const [isActive, setIsActive] = useState(false);
   const slideNav = () => {
@@ -25,6 +26,18 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   typeof window !== "undefined" && window.addEventListener("scroll", slideNav);
   return (
     <div>
+      <Head>
+        <title>{seo?.metaTitle ?? metaContent.TITLE}</title>
+        <meta
+          name="description"
+          content={seo?.metaDescription ?? metaContent.DESCRIPTION}
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href={metaContent.FAVICON} />
+        {seo?.meta?.map((meta: any) => (
+          <meta name={meta.name} key={meta.id} content={meta.content} />
+        ))}
+      </Head>
       <Navbar />
       <div className={wrapperClass}>{children}</div>
       {isActive && (
