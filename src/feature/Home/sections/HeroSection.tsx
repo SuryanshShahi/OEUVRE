@@ -27,7 +27,7 @@ const HeroSection = () => {
           variants={HeroVariants.CARD_1}
           whileInView="show"
           initial="hidden"
-          className="card-type-2 animate-pulse relative bg-[rgb(0,0,0,0.2)] space-y-2 p-4 text-white h-[400px] rounded-2xl bg-cover w-full max-w-[300px]"
+          className="card-type-2 animate-pulse relative space-y-2 p-4 text-white h-[400px] rounded-2xl bg-cover w-full max-w-[300px]"
         >
           <Img
             src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4050.jpg?tr=w-600"

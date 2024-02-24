@@ -10,7 +10,7 @@ const PerfectOutfit = () => {
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"
-      className="relative bg-primary py-20 px-5 bg-cover bg-fixed !mt-0"
+      className="relative bg-center py-20  px-5 bg-cover bg-fixed !mt-0"
       style={{
         backgroundImage:
           "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4348.jpg?updatedAt=1708690315415')",
