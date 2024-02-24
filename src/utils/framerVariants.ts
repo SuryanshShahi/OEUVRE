@@ -10,20 +10,20 @@ export const HeroVariants: { [x: string]: Variants } = {
       left: 0,
       opacity: 1,
       position: "relative",
-      transition: { duration: 0.7, staggerChildren: 0.5 },
+      transition: { duration: 0.7 },
     },
   },
   CARD_2: {
     hidden: {
       opacity: 0,
-      bottom: -150,
+      bottom: -100,
       position: "relative",
     },
     show: {
       bottom: 0,
       opacity: 1,
       position: "relative",
-      transition: { duration: 1.2, staggerChildren: 0.5 },
+      transition: { duration: 1 },
     },
   },
   CARD_3: {
@@ -36,7 +36,7 @@ export const HeroVariants: { [x: string]: Variants } = {
       right: 0,
       opacity: 1,
       position: "relative",
-      transition: { duration: 0.7, staggerChildren: 0.5 },
+      transition: { duration: 0.7 },
     },
   },
   SUNSHINE: {
@@ -49,12 +49,12 @@ export const HeroVariants: { [x: string]: Variants } = {
       opacity: 1,
       width: "100%",
       height: "100%",
-      transition: { duration: 2, staggerChildren: 0.5 },
+      transition: { duration: 2 },
     },
   },
 
   CONTAINER: {
     hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { duration: 2 } },
+    show: { opacity: 1, transition: { duration: 1 } },
   },
 };
