@@ -32,7 +32,7 @@ const Home = () => {
     },
   ];
   return (
-    <div className="space-y-28  text-white">
+    <div className="space-y-28 overflow-x-hidden text-white">
       <HeroSection />
       <PerfectOutfit />
       <NewCollections />

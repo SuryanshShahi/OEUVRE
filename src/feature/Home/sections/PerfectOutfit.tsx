@@ -1,9 +1,15 @@
 import Img from "@/shared/Img";
+import { HeroVariants } from "@/utils/framerVariants";
+import { motion } from "framer-motion";
 import React from "react";
 
 const PerfectOutfit = () => {
   return (
-    <div
+    <motion.div
+      viewport={{ once: false }}
+      variants={HeroVariants.CONTAINER}
+      whileInView="show"
+      initial="hidden"
       className="relative bg-primary py-20 px-5 bg-cover bg-fixed"
       style={{
         backgroundImage:
@@ -44,7 +50,7 @@ const PerfectOutfit = () => {
         />
         while embracing the beauty of artistic exploration.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

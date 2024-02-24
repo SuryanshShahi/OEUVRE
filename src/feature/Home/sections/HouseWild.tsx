@@ -1,4 +1,6 @@
 import Button from "@/shared/Button/Button";
+import { HeroVariants } from "@/utils/framerVariants";
+import { motion } from "framer-motion";
 import React from "react";
 
 const HouseWild = ({
@@ -11,8 +13,18 @@ const HouseWild = ({
   setIsActive: (idx: number) => void;
 }) => {
   return (
-    <div className="grid md:grid-cols-2 bg-primary">
-      <div
+    <motion.div
+      viewport={{ once: false }}
+      variants={HeroVariants.CONTAINER}
+      whileInView="show"
+      initial="hidden"
+      className="grid md:grid-cols-2 bg-primary"
+    >
+      <motion.div
+        viewport={{ once: false }}
+        variants={HeroVariants.CARD_1}
+        whileInView="show"
+        initial="hidden"
         className="justify-center flex flex-col items-center text-white w-full bg-cover h-[673px]"
         style={{
           backgroundImage:
@@ -21,8 +33,14 @@ const HouseWild = ({
       >
         <div className="text-start font-bold text-3xl">OEUVRE</div>
         <div className="text-start text-sm ">WORK OF ART</div>
-      </div>
-      <div className="max-w-lg m-auto md:py-36 py-20 px-5">
+      </motion.div>
+      <motion.div
+        viewport={{ once: false }}
+        variants={HeroVariants.CARD_3}
+        whileInView="show"
+        initial="hidden"
+        className="max-w-lg m-auto md:py-36 py-20 px-5"
+      >
         <div className="text-xs text-heading">asdsd</div>
         <div className="text-3xl font-bold my-2">
           Crafted for the discerning
@@ -61,8 +79,8 @@ const HouseWild = ({
           </div>
         </div> */}
         <Button className="w-full mt-10">SHOW YOUR EXCITEMENT</Button>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

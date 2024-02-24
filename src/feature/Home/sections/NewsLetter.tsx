@@ -1,9 +1,17 @@
 import Button from "@/shared/Button/Button";
+import { HeroVariants } from "@/utils/framerVariants";
+import { motion } from "framer-motion";
 import React from "react";
 
 const NewsLetter = () => {
   return (
-    <div className="bg-cover text-white text-center py-14 bg-primary b-fixed px-5 !mt-0">
+    <motion.div
+      viewport={{ once: false }}
+      variants={HeroVariants.CONTAINER}
+      whileInView="show"
+      initial="hidden"
+      className="bg-cover text-white text-center py-14 bg-primary b-fixed px-5 !mt-0"
+    >
       <div className="relative space-y-8">
         <div className="sm:text-[36px] text-3xl font-medium sm:leading-[50px] max-w-[900px] mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -20,7 +28,7 @@ const NewsLetter = () => {
         </div>
         <div>asdasdsad asd dadasd</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

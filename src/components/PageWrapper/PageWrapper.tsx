@@ -2,6 +2,8 @@ import { FC, PropsWithChildren, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { IoIosArrowUp } from "react-icons/io";
+import { motion } from "framer-motion";
+import { HeroVariants } from "@/utils/framerVariants";
 interface IPageWraps {
   wrapperClass?: string;
   isBanner?: boolean;
@@ -11,7 +13,6 @@ interface IPageWraps {
 const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   children,
   wrapperClass,
-  isNavbar,
 }) => {
   const [isActive, setIsActive] = useState(false);
   const slideNav = () => {
@@ -23,8 +24,8 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   };
   typeof window !== "undefined" && window.addEventListener("scroll", slideNav);
   return (
-    <div className="animate-bottom">
-      {!isNavbar && <Navbar />}
+    <div>
+      <Navbar />
       <div className={wrapperClass}>{children}</div>
       {isActive && (
         <div
