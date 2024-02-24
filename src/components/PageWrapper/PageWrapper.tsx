@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, useState } from "react";
+import { FC, Fragment, PropsWithChildren, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { IoIosArrowUp } from "react-icons/io";
@@ -25,7 +25,7 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   };
   typeof window !== "undefined" && window.addEventListener("scroll", slideNav);
   return (
-    <div>
+    <Fragment>
       <Head>
         <title>{seo?.metaTitle ?? metaContent.TITLE}</title>
         <meta
@@ -46,18 +46,20 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
           <meta name={meta.name} key={meta.id} content={meta.content} />
         ))}
       </Head>
-      <Navbar />
-      <div className={wrapperClass}>{children}</div>
-      {isActive && (
-        <div
-          className="z-10 w-12 h-8 hover:h-10 duration-300 bottom-0 right-10 rounded-t-md fixed cursor-pointer bg-heading flex items-center justify-center"
-          onClick={() => window.scroll(0, 0)}
-        >
-          <IoIosArrowUp />
-        </div>
-      )}
-      <Footer />
-    </div>
+      <div>
+        <Navbar />
+        <div className={wrapperClass}>{children}</div>
+        {isActive && (
+          <div
+            className="z-10 w-12 h-8 hover:h-10 duration-300 bottom-0 right-10 rounded-t-md fixed cursor-pointer bg-heading flex items-center justify-center"
+            onClick={() => window.scroll(0, 0)}
+          >
+            <IoIosArrowUp />
+          </div>
+        )}
+        <Footer />
+      </div>
+    </Fragment>
   );
 };
 

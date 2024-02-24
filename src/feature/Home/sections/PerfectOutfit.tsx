@@ -10,14 +10,14 @@ const PerfectOutfit = () => {
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"
-      className="relative bg-primary py-20 px-5 bg-cover bg-fixed"
+      className="relative bg-primary py-20 px-5 bg-cover bg-fixed !mt-0"
       style={{
         backgroundImage:
           "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4348.jpg?updatedAt=1708690315415')",
       }}
     >
       <div className="bg-[rgb(0,0,0,0.6)] w-full h-full absolute left-0 top-0"></div>
-      <p className="md:text-4xl z-10 relative text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10">
+      <p className="text-gradient md:text-4xl z-10 relative text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10">
         Elevate your style game to new heights with our exclusive collection.
         <br /> Each <span className="font-bold">garment</span>
         <Img
@@ -25,7 +25,7 @@ const PerfectOutfit = () => {
           alt="image"
           height={32}
           width={96}
-          className="md:h-10 inline-block rounded-full object-cover mx-2 my-3"
+          className="h-10 inline-block rounded-full object-cover mx-2 my-3"
           isLocal
         />
         tells a unique <span className="font-bold">story</span>, meticulously
@@ -35,17 +35,17 @@ const PerfectOutfit = () => {
           alt="image"
           height={32}
           width={96}
-          className="md:h-10 inline-block rounded-full object-cover mx-2 my-3"
+          className="h-10 inline-block rounded-full object-cover mx-2 my-3"
           isLocal
         />
         to reflect the essence of modern
-        <span className="font-bold">luxury</span>
+        <span className="font-bold"> luxury</span>
         <Img
           src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4023.jpg"
           alt="image"
           height={32}
           width={96}
-          className="md:h-10 inline-block rounded-full object-cover mx-2 my-3"
+          className="h-10 inline-block rounded-full object-cover mx-2 my-3"
           isLocal
         />
         while embracing the beauty of artistic exploration.

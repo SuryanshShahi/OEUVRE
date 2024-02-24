@@ -1,4 +1,5 @@
 import Button from "@/shared/Button/Button";
+import Img from "@/shared/Img";
 import { HeroVariants } from "@/utils/framerVariants";
 import { motion } from "framer-motion";
 import React from "react";
@@ -25,24 +26,32 @@ const HouseWild = ({
         variants={HeroVariants.CARD_1}
         whileInView="show"
         initial="hidden"
-        className="justify-center flex flex-col items-center text-white w-full bg-cover h-[673px]"
+        className="justify-center sm:flex hidden flex-col items-center text-white w-full bg-cover h-[673px]"
         style={{
           backgroundImage:
             "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4189.jpg?tr=w-1424,h-1346,fo-center')",
         }}
       >
         <div className="text-start font-bold text-3xl">O E U V R E</div>
-        <div className="text-start text-sm ">W O R K  O F A R T</div>
+        <div className="text-start text-sm ">W O R K O F A R T</div>
       </motion.div>
       <motion.div
         viewport={{ once: false }}
         variants={HeroVariants.CARD_3}
         whileInView="show"
         initial="hidden"
-        className="max-w-lg m-auto md:py-36 py-20 px-5"
+        className="sm:max-w-lg m-auto md:py-36 relative py-20 px-5"
       >
+        <Img
+          src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4189.jpg?tr=w-1424,h-1346,fo-center"
+          height={500}
+          width={500}
+          alt=""
+          isLocal
+          className="absolute sm:hidden opacity-10 h-full w-full top-0 left-0 object-cover"
+        />
         <div className="text-xs text-heading">Own the Future. Own Oeuvre.</div>
-        <div className="text-3xl font-bold my-2">
+        <div className="text-3xl font-bold my-2 text-gradient">
           Crafted for the discerning
         </div>
         <div className="">

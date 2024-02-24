@@ -20,6 +20,15 @@ body {
   width: 0;
   height: 0;
 }
+.text-gradient {
+  background: linear-gradient(
+    154deg,
+    rgb(255, 255, 255) 39.26788772243251%,
+    rgb(114, 114, 103) 76.98356881240036%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #navbar.active {
   animation: fadeNav 0.7s linear forwards;
   @apply shadow-md bg-[#18191d];

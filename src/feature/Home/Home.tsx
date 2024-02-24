@@ -34,12 +34,16 @@ const Home = () => {
   ];
   return (
     <div className="space-y-28 overflow-x-hidden text-white">
-      <HeroSection />
+      <div className="bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgb(0,0,0)_36%)]">
+        <HeroSection />
+      </div>
       <PerfectOutfit />
       <NewCollections />
       <HouseWild data={data} isActive={isActive} setIsActive={setIsActive} />
       <RaiseStandards />
-      <Sunshine />
+      <div className="bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgb(0,0,0)_36%)]">
+        <Sunshine />
+      </div>
       <NewsLetter />
     </div>
   );

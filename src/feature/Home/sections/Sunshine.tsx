@@ -10,10 +10,10 @@ const Sunshine = () => {
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"
-      className="relative bg-primary py-20 overflow-hidden"
+      className="relative bg-prmary py-20 overflow-hidden"
     >
       <div className="text-center space-y-4">
-        <div className="text-5xl leading-[60px] font-bold">
+        <div className="text-5xl leading-[60px] font-bold text-gradient">
           Luxury that blends with comfort
         </div>
         <p className="text-secondary max-w-[800px] mx-auto">
@@ -27,7 +27,7 @@ const Sunshine = () => {
           initial="hidden"
           className="overflow-hidden"
         >
-          <div className="flex py-7 -ml-20 max-[640px]:overflow-x-scroll">
+          <div className="flex py-7 -ml-10 max-[640px]:overflow-x-scroll justify-center">
             <Img
               src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4176.jpg?tr=w-440"
               alt="image"

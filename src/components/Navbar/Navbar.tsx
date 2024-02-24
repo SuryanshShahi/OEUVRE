@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import useNavbar from "./views/useNavbar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { SiOpenbadges } from "react-icons/si";
-// import { FiSearch } from "react-icons/fi";
+import Img from "@/shared/Img";
+import { IoMailOutline } from "react-icons/io5";
 
 const Navbar = ({ navClass }: { navClass?: string }) => {
   const { isActive, setIsActive } = useNavbar();
@@ -21,8 +22,15 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
         className={`top-0 sticky flex text-white justify-between p-5 items-center w-full z-50 ${navClass}`}
         id="navbar"
       >
-        <div className="font-black text-2xl">OEUVRE</div>
-        <div className="lg:flex hidden items-center gap-x-8">
+        <Img
+          src="/images/icon.png"
+          height={50}
+          width={50}
+          alt=""
+          isLocal
+          className="animate-pulse"
+        />
+        {/* <div className="lg:flex hidden items-center gap-x-8">
           {["New Arrivals", "All Product", "Blogs", "Contact Us"]?.map(
             (item, idx) => (
               <div className="group" key={idx}>
@@ -41,11 +49,19 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
               </div>
             )
           )}
-        </div>
+        </div> */}
+        <Img
+          src="/images/logo.png"
+          height={80}
+          width={80}
+          alt=""
+          isLocal
+          className="h-12 w-[150px]"
+        />
         <div className="w-fit md:flex hidden items-center group relative lg:absolute lg:right-44">
           <SiOpenbadges
             size={24}
-            className="absolute right-3 cursor-pointer hover:text-black z-10"
+            className="absolute right-3 cursor-pointer group-hover:text-black z-10"
           />
           <input
             className="outline-none bg-neutral-100 group-hover:w-[250px] duration-700 w-[50px] group-hover:opacity-[1] opacity-0 rounded-full text-black pl-5 group-hover:pr-10 h-12"
@@ -56,9 +72,12 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
         <Button className="lg:flex hidden">Get Started</Button>
         <GiHamburgerMenu
           size={28}
-          className="lg:hidden"
+          className="hidden"
           onClick={() => setIsActive(!isActive)}
         />
+        <a href="mailto:oeuvreclothinglondon@gmail.com">
+          <IoMailOutline size={28} className="lg:hidden text-[#aaa]" />
+        </a>
       </div>
       {isActive && (
         <div
@@ -68,7 +87,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
       )}
       {isActive && (
         <div
-          className="bg-white h-screen w-[300px] space-y-6 py-3 px-4 fixed top-0"
+          className="bg-primary text-white h-screen w-[300px] space-y-6 py-3 px-4 fixed top-0"
           id="sideBar"
         >
           <div className="font-black text-2xl">OEUVRE</div>
@@ -94,7 +113,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
           <div className="relative w-fit flex items-center mx-auto group">
             <SiOpenbadges
               size={24}
-              className="absolute right-3 cursor-pointer z-10"
+              className="absolute right-3 cursor-pointer z-10 group-hover:text-black"
             />
             <input
               className="outline-none bg-neutral-100 group-hover:w-[268px] duration-700 w-[50px] group-hover:opacity-[1] opacity-0 rounded-full text-black pl-5 group-hover:pr-10 h-12"

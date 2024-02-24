@@ -9,11 +9,8 @@ const config: Config = {
         secondary: "#c5c5c6",
         heading: "#c4ef17",
         button: "linear-gradient(to bottom, #b4855b, #4e342e)",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        backgroundColor:
+          "linear-gradient(180deg,rgba(0,0,0,0) 0%,rgb(0,0,0) 36%)",
       },
     },
   },
