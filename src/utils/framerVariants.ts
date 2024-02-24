@@ -16,7 +16,7 @@ export const HeroVariants: { [x: string]: Variants } = {
   CARD_2: {
     hidden: {
       opacity: 0,
-      bottom: -200,
+      bottom: -150,
       position: "relative",
     },
     show: {
@@ -49,7 +49,6 @@ export const HeroVariants: { [x: string]: Variants } = {
       opacity: 1,
       width: "100%",
       height: "100%",
-      overflow: "hidden",
       transition: { duration: 2, staggerChildren: 0.5 },
     },
   },
