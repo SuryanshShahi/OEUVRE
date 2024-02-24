@@ -2,8 +2,8 @@ import { FC, PropsWithChildren, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { IoIosArrowUp } from "react-icons/io";
-import { Head } from "next/document";
 import { metaContent } from "@/utils/constant";
+import Head from "next/head";
 interface IPageWraps {
   wrapperClass?: string;
   isBanner?: boolean;
