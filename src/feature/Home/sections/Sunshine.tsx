@@ -25,9 +25,9 @@ const Sunshine = () => {
           variants={HeroVariants.SUNSHINE}
           whileInView="show"
           initial="hidden"
-          className="overflow-hidden max-[640px]:overflow-x-scroll"
+          className="overflow-hidden"
         >
-          <div className="flex py-7 -ml-20">
+          <div className="flex py-7 -ml-20 max-[640px]:overflow-x-scroll">
             <Img
               src="/images/vr.webp"
               alt="image"
