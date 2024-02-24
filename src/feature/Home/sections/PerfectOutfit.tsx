@@ -10,11 +10,7 @@ const PerfectOutfit = () => {
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"
-      className="relative bg-center py-20  px-5 bg-cover bg-fixed !mt-0"
-      style={{
-        backgroundImage:
-          "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4348.jpg?updatedAt=1708690315415')",
-      }}
+      className="relative bg-center py-20  px-5 bg-cover bg-fixed sm:bg-[url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4348.jpg')] bg-[url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4348.jpg?tr=w-780,h-1404')] !mt-0"
     >
       <div className="bg-[rgb(0,0,0,0.6)] w-full h-full absolute left-0 top-0"></div>
       <p className="text-gradient md:text-4xl z-10 relative text-3xl text-center md:leading-[60px] leading-[50px] max-w-[1140px] mx-auto md:px-10">
