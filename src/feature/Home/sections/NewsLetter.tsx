@@ -15,7 +15,8 @@ const NewsLetter = () => {
       <div className="relative space-y-8">
         <div className="sm:text-[36px] text-3xl font-medium sm:leading-[50px] max-w-[900px] mx-auto text-gradient">
           Enroll and become a member of our website to unlock member benefits
-          and access exclusive deals.
+          and access{" "}
+          <span className="text-green-gradient">exclusive deals.</span>
         </div>
         <div className="relative w-fit mx-auto">
           <Button className="py-[10px] !px-11 absolute top-[1px] !text-white right-0 !bg-black">

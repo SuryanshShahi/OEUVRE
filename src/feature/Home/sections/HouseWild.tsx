@@ -52,7 +52,8 @@ const HouseWild = ({
         />
         <div className="text-xs text-heading">Own the Future. Own Oeuvre.</div>
         <div className="text-3xl font-bold my-2 text-gradient">
-          Crafted for the discerning
+          Crafted for the{" "}
+          <span className="text-green-gradient">discerning</span>
         </div>
         <div className="">
           Founded on the belief that fashion is a canvas for self-expression,

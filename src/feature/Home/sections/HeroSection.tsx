@@ -13,7 +13,8 @@ const HeroSection = () => {
     >
       <div className="text-center max-w-[850px] mx-auto space-y-4">
         <div className="text-5xl leading-[60px] text-gradient">
-          Experience the Epitome of Luxury, Where Fashion Meets Art
+          Experience the Epitome of Luxury, Where{" "}
+          <span className="text-green-gradient">Fashion Meets Art</span>
         </div>
         <p className="text-secondary">
           Indulge in the fusion of luxury and artistry with Oeuvre - a testament

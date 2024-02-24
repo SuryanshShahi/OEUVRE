@@ -14,12 +14,14 @@ const Sunshine = () => {
     >
       <div className="text-center space-y-4">
         <div className="text-5xl leading-[60px] font-bold text-gradient">
-          Luxury that blends with comfort
+          <span className="text-green-gradient">Luxury</span> that blends with
+          comfort
         </div>
         <p className="text-secondary max-w-[800px] mx-auto">
           Crafted with the finest materials, our clothing offers unparalleled
           breathability, ensuring you feel at ease in any setting.
         </p>
+
         <motion.div
           viewport={{ once: false }}
           variants={HeroVariants.SUNSHINE}

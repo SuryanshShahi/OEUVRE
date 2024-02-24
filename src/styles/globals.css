@@ -26,6 +26,19 @@ body {
     rgb(255, 255, 255) 39.26788772243251%,
     rgb(114, 114, 103) 76.98356881240036%
   );
+  /* rgb(80, 250, 145)
+  rgb(11, 77, 30) */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-green-gradient {
+  background: linear-gradient(
+    -45deg,
+    rgb(80, 250, 145) 30%,
+    rgb(11, 77, 30) 67%
+  );
+  /* rgb(80, 250, 145)
+  rgb(11, 77, 30) */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
