@@ -25,9 +25,9 @@ const Sunshine = () => {
           variants={HeroVariants.SUNSHINE}
           whileInView="show"
           initial="hidden"
-          className="overflow-hidden"
+          className="overflow-hidden sm:mx-0 mx-auto"
         >
-          <div className="flex py-7 -ml-10 max-[640px]:overflow-x-scroll justify-center">
+          <div className="flex py-7 sm:-ml-10 max-[640px]:overflow-x-scroll justify-center">
             <Img
               src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4176.jpg?tr=w-440"
               alt="image"
