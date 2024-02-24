@@ -37,9 +37,9 @@ const HeroSection = () => {
             isLocal
             className="absolute h-full opacity-30 rounded-2xl w-full top-0 left-0"
           />
-          <div className="text-2xl font-medium">100+ Collections</div>
+          <div className="text-2xl font-medium">Exquisite Collection</div>
           <p className="text-sm">
-            asdsad as d dasd asd sadas das dasd sada das d ad d ad adasd
+          Meticulously curated with precision for those with a penchant for luxury.
           </p>
           <div className="text-xl bottom-3 right-8 absolute">Shop Soon</div>
         </motion.div>

@@ -36,7 +36,7 @@ const RaiseStandards = () => {
           <div className="font-semibold text-[18px]">
           Oeuvre is more than a brand
           </div>
-          <div className="text-xs">Its a community</div>
+          <div className="text-xs">It &apos;s a community</div>
         </motion.div>
 
         <motion.div
