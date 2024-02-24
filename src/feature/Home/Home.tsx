@@ -6,6 +6,7 @@ import HouseWild from "./sections/HouseWild";
 import RaiseStandards from "./sections/RaiseStandards";
 import Sunshine from "./sections/Sunshine";
 import NewsLetter from "./sections/NewsLetter";
+import Img from "@/shared/Img";
 
 const Home = () => {
   const [isActive, setIsActive] = useState(0);

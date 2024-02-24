@@ -3,7 +3,8 @@ import Button from "@/shared/Button/Button";
 import React, { useState } from "react";
 import useNavbar from "./views/useNavbar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FiSearch } from "react-icons/fi";
+import { SiOpenbadges } from "react-icons/si";
+// import { FiSearch } from "react-icons/fi";
 
 const Navbar = ({ navClass }: { navClass?: string }) => {
   const { isActive, setIsActive } = useNavbar();
@@ -42,13 +43,13 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
           )}
         </div>
         <div className="w-fit md:flex hidden items-center group relative lg:absolute lg:right-44">
-          <FiSearch
+          <SiOpenbadges
             size={24}
             className="absolute right-3 cursor-pointer hover:text-black z-10"
           />
           <input
             className="outline-none bg-neutral-100 group-hover:w-[250px] duration-700 w-[50px] group-hover:opacity-[1] opacity-0 rounded-full text-black pl-5 group-hover:pr-10 h-12"
-            placeholder="Enter Email"
+            placeholder="Enter Email, Stay Updated"
           />
         </div>
 
@@ -91,7 +92,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
           )}
 
           <div className="relative w-fit flex items-center mx-auto group">
-            <FiSearch
+            <SiOpenbadges
               size={24}
               className="absolute right-3 cursor-pointer z-10"
             />
