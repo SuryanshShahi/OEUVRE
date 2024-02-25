@@ -14,7 +14,7 @@ const Sunshine = () => {
     >
       <div className="text-center space-y-4">
         <div className="text-5xl leading-[60px] font-bold text-gradient">
-          <span className="text-gradient">Luxury</span> that blends with
+          <span className="text-green-gradient">Luxury</span> that blends with
           comfort
         </div>
         <p className="text-secondary max-w-[800px] mx-auto">

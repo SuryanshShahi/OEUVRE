@@ -14,11 +14,11 @@ const HeroSection = () => {
       <div className="text-center max-w-[850px] mx-auto space-y-4">
         <div className="text-5xl leading-[60px] text-gradient">
           Experience the Epitome of Luxury, Where{" "}
-          <span className="text-gradient">Fashion Meets Art</span>
+          <span className="text-green-gradient">Fashion Meets Art</span>
         </div>
         <p className="text-secondary">
           Indulge in the fusion of luxury and artistry with Oeuvre - a testament
-          to the confluence of fashion creativity, and
+          to the confluence of fashion creativity, creativity, and
           individuality.
         </p>
       </div>
@@ -54,7 +54,7 @@ const HeroSection = () => {
           className="card-type1 max-[1024px]:order-last relative max-[640px]:order-none h-[400px] rounded-2xl bg-cover w-full"
           style={{
             backgroundImage:
-              "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4167.jpg')",
+              "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4361.jpg')",
           }}
         >
           <div className="absolute top-0 flex right-0 w-2/3 md:w-1/2">
