@@ -12,7 +12,7 @@ const NewCollections = () => {
       className="text-center space-y-4 max-w-[1024px] mx-auto px-5"
     >
       <div className="text-5xl leading-[60px] text-gradient">
-        Our <span className="text-green-gradient">Inaugral</span> Line
+        Our <span className="text-gradient">Inaugral</span> Line
       </div>
       <p className="text-secondary max-w-[800px] mx-auto">
         From concept to creation, we prioritize precision, ensuring that every
