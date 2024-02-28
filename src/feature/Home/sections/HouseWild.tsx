@@ -87,7 +87,7 @@ const HouseWild = ({
             {data[isActive]?.tabContent}
           </div>
         </div> */}
-        <Button className="w-full mt-10">SHOW YOUR EXCITEMENT</Button>
+        <Button className="w-full mt-10">SHOP THE FIRST DROP</Button>
       </motion.div>
     </motion.div>
   );
