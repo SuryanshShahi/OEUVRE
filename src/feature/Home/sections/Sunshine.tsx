@@ -14,22 +14,20 @@ const Sunshine = () => {
     >
       <div className="text-center space-y-4">
         <div className="text-5xl leading-[60px] font-bold text-gradient">
-          <span className="text-green-gradient">Luxury</span> that blends with
-          comfort
+          Luxury that blends with comfort
         </div>
         <p className="text-secondary max-w-[800px] mx-auto">
           Crafted with the finest materials, our clothing offers unparalleled
           breathability, ensuring you feel at ease in any setting.
         </p>
-
         <motion.div
           viewport={{ once: false }}
           variants={HeroVariants.SUNSHINE}
           whileInView="show"
           initial="hidden"
-          className="overflow-hidden sm:mx-0 mx-auto"
+          className="overflow-hidden"
         >
-          <div className="flex py-7 sm:-ml-10 max-[640px]:overflow-x-scroll justify-center">
+          <div className="flex py-7 -ml-10 max-[640px]:overflow-x-scroll justify-center">
             <Img
               src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4176.jpg?tr=w-440"
               alt="image"
@@ -96,7 +94,7 @@ const Sunshine = () => {
               isLocal
             />
             <Img
-              src="https://ik.imagekit.io/designkrunch/Oeuvre/051A3965.jpg?updatedAt=1708690262795?tr=w-440"
+              src="https://ik.imagekit.io/designkrunch/Oeuvre/051A4167.jpg?updatedAt=1708690262795?tr=w-440"
               alt="image"
               className="h-[280px] w-[220px] object-cover rounded-2xl -rotate-[20deg] -ml-10 mt-3"
               height={280}
