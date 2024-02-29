@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import { IoIosArrowUp } from "react-icons/io";
 import { metaContent } from "@/utils/constant";
 import Head from "next/head";
+import AnimatedCursor from "react-animated-cursor";
 interface IPageWraps {
   wrapperClass?: string;
   isBanner?: boolean;
@@ -26,6 +27,29 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
   typeof window !== "undefined" && window.addEventListener("scroll", slideNav);
   return (
     <Fragment>
+      <AnimatedCursor
+        innerSize={6}
+        outerSize={40}
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={1.5}
+        outerStyle={{
+          border: "2px solid white",
+          backgroundColor: "#ffffff20",
+        }}
+        innerStyle={{
+          backgroundColor: "#ffffff",
+        }}
+        clickables={[
+          "a",
+          "img",
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
       <Head>
         <title>{seo?.metaTitle ?? metaContent.TITLE}</title>
         <meta
@@ -35,11 +59,29 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={metaContent.FAVICON} />
         {/* <!-- ? ################### FAVICON SECTION ################### --> */}
-        <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="favicon/favicon-16x16.png"
+        />
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#333333" />
+        <link
+          rel="mask-icon"
+          href="/favicon/safari-pinned-tab.svg"
+          color="#333333"
+        />
         <meta name="msapplication-TileColor" content="#333333" />
         <meta name="theme-color" content="#333333" />
         {seo?.meta?.map((meta: any) => (

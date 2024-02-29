@@ -6,7 +6,6 @@ import HouseWild from "./sections/HouseWild";
 import RaiseStandards from "./sections/RaiseStandards";
 import Sunshine from "./sections/Sunshine";
 import NewsLetter from "./sections/NewsLetter";
-import Img from "@/shared/Img";
 
 const Home = () => {
   const [isActive, setIsActive] = useState(0);
@@ -39,7 +38,7 @@ const Home = () => {
       </div>
       <PerfectOutfit />
       <NewCollections />
-      <HouseWild data={data} isActive={isActive} setIsActive={setIsActive} />
+      <HouseWild />
       <RaiseStandards />
       <div className="bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgb(0,0,0)_36%)]">
         <Sunshine />
