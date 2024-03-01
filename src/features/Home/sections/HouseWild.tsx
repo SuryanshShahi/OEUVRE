@@ -4,15 +4,7 @@ import { HeroVariants } from "@/utils/framerVariants";
 import { motion } from "framer-motion";
 import React from "react";
 
-const HouseWild = ({
-  data,
-  isActive,
-  setIsActive,
-}: {
-  data: any;
-  isActive: number;
-  setIsActive: (idx: number) => void;
-}) => {
+const HouseWild = () => {
   return (
     <motion.div
       viewport={{ once: false }}

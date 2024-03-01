@@ -1,10 +1,10 @@
 import PageWrapper from "@/components/PageWrapper/PageWrapper";
-import Home from "@/features/Home/Home";
+import JustDropped from "@/features/JustDropped/JustDropped";
 
 const Index = () => {
   return (
     <PageWrapper>
-      <Home />
+      <JustDropped />
     </PageWrapper>
   );
 };

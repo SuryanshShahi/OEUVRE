@@ -1,4 +1,3 @@
-"use client";
 import Button from "@/shared/Button/Button";
 import React, { useState } from "react";
 import useNavbar from "./views/useNavbar";
@@ -6,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { SiOpenbadges } from "react-icons/si";
 import Img from "@/shared/Img";
 import { IoMailOutline } from "react-icons/io5";
-// import { FiSearch } from "react-icons/fi";
+import { useRouter } from "next/router";
 
 const Navbar = ({ navClass }: { navClass?: string }) => {
   const { isActive, setIsActive } = useNavbar();
@@ -16,7 +15,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
     { name: "Blog", route: "/blog" },
   ];
   const [activeTab, setActiveTab] = useState(0);
-
+  const router = useRouter();
   return (
     <>
       <div
@@ -30,6 +29,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
           alt=""
           isLocal
           className="animate-pulse"
+          onClick={() => router.push("/")}
         />
         {/* <div className="lg:flex hidden items-center gap-x-8">
           {["New Arrivals", "All Product", "Blogs", "Contact Us"]?.map(
@@ -58,6 +58,7 @@ const Navbar = ({ navClass }: { navClass?: string }) => {
           alt=""
           isLocal
           className="h-12 w-[150px]"
+          onClick={() => router.push("/")}
         />
         <div className="w-fit md:flex hidden items-center group relative lg:absolute lg:right-44">
           <SiOpenbadges

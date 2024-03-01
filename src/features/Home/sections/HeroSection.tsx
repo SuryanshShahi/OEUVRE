@@ -5,7 +5,7 @@ import { HeroVariants } from "@/utils/framerVariants";
 const HeroSection = () => {
   return (
     <motion.div
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"
@@ -22,7 +22,7 @@ const HeroSection = () => {
       </div>
       <div className="flex max-[1024px]:flex-wrap sm:justify-between justify-center items-center gap-5 !mt-8">
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={HeroVariants.CARD_1}
           whileInView="show"
           initial="hidden"
@@ -45,7 +45,7 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={HeroVariants.CARD_2}
           whileInView="show"
           initial="hidden"
@@ -56,7 +56,7 @@ const HeroSection = () => {
           }}
         ></motion.div>
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={HeroVariants.CARD_3}
           whileInView="show"
           initial="hidden"
