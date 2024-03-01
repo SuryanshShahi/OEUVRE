@@ -6,7 +6,7 @@ import React from "react";
 const Sunshine = () => {
   return (
     <motion.div
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"
@@ -21,7 +21,7 @@ const Sunshine = () => {
           breathability, ensuring you feel at ease in any setting.
         </p>
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={HeroVariants.SUNSHINE}
           whileInView="show"
           initial="hidden"

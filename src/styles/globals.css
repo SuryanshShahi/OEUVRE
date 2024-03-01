@@ -85,7 +85,7 @@ body {
 @keyframes accordion {
   from {
     opacity: 0;
-    margin-left: -100%;
+    margin-bottom: -100%;
   }
   to {
     opacity: 1;

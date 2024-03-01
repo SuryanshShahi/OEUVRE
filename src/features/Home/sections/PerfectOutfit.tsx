@@ -6,7 +6,7 @@ import React from "react";
 const PerfectOutfit = () => {
   return (
     <motion.div
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"

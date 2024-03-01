@@ -2,19 +2,21 @@ import Button from "@/shared/Button/Button";
 import Img from "@/shared/Img";
 import { HeroVariants } from "@/utils/framerVariants";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 import React from "react";
 
 const HouseWild = () => {
+  const router = useRouter();
   return (
     <motion.div
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"
       className="grid md:grid-cols-2 bg-primary"
     >
       <motion.div
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         variants={HeroVariants.CARD_1}
         whileInView="show"
         initial="hidden"
@@ -28,7 +30,7 @@ const HouseWild = () => {
         <div className="text-start text-sm ">W O R K O F A R T</div>
       </motion.div>
       <motion.div
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         variants={HeroVariants.CARD_3}
         whileInView="show"
         initial="hidden"
@@ -79,7 +81,12 @@ const HouseWild = () => {
             {data[isActive]?.tabContent}
           </div>
         </div> */}
-        <Button className="w-full mt-10">SHOP THE FIRST DROP</Button>
+        <Button
+          className="w-full mt-10"
+          onClick={() => router.push("/dropped")}
+        >
+          SHOP THE FIRST DROP
+        </Button>
       </motion.div>
     </motion.div>
   );

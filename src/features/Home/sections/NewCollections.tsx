@@ -5,7 +5,7 @@ import React from "react";
 const NewCollections = () => {
   return (
     <motion.div
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       variants={HeroVariants.CONTAINER}
       whileInView="show"
       initial="hidden"
@@ -19,7 +19,7 @@ const NewCollections = () => {
       </p>
       <div className="flex max-[1024px]:flex-wrap sm:text-start text-center sm:justify-between !justify-center items-center gap-5 !mt-8">
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={HeroVariants.CARD_1}
           whileInView="show"
           initial="hidden"
@@ -36,7 +36,7 @@ const NewCollections = () => {
         </motion.div>
 
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={HeroVariants.CARD_2}
           whileInView="show"
           initial="hidden"
@@ -51,7 +51,7 @@ const NewCollections = () => {
         </motion.div>
 
         <motion.div
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           variants={HeroVariants.CARD_3}
           whileInView="show"
           initial="hidden"
