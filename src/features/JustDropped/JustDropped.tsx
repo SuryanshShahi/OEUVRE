@@ -21,11 +21,10 @@ const JustDropped = () => {
       className="container mx-auto text-white space-y-10 my-20 px-5"
     >
       <h1 className="md:text-5xl text-3xl text-gradient !bg-[linear-gradient(-45deg,rgb(255,255,255)_40%,rgb(114,114,103)_113%)]">
-        JUST DROPPED
+        SPRING-SUMMER 2024 COLLECTION
       </h1>
       <p className="md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur. Massa in in pharetra ornare
-        velit mauris.
+      Spring has sprung, and the Sunshine&apos;s calling! Shop the Just Dropped Collection, made in London with 100% premium cotton.
       </p>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 !mt-20 justify-between sm:gap-5 gap-16">
         <div className="md:flex hidden flex-col sm:gap-5 gap-16">

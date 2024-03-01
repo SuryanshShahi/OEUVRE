@@ -5,7 +5,7 @@ export const metaContent = {
 };
 export const droppedData = [
   {
-    title: "Oeuvre Core Logo Tee",
+    title: "Oeuvre Core Logo Tee (W)",
     description:
       "A soft, breathable cotton tee, with its classic fit, embellished with the timeless OEUVRE logo effortlessly embodies house icon status and complements any denim, shorts, cargos or trouser ensemble.",
     image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7576.jpg",
@@ -47,45 +47,31 @@ export const droppedData = [
     price: "₹3990",
   },
   {
+    title: "Oeuvre Roman Medieval Tee",
+    description:
+      'Blending timeless luxury with the "MIDDLE AGES" characterized by significant cultural, political, and economic changes across Europe. This soft cotton tee showcases the distinctive OEUVRE logo in a captivating floral motif. As an iconic emblem of effortless style, it effortlessly pairs with our range of house denim, cargos, or shorts, offering endless possibilities for chic styling.',
+    image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7404.jpg",
+    price: "₹3990",
+  },
+  {
+    title: "Oeuvre Roman Medieval Tee (W)",
+    description:
+      'Blending timeless luxury with the "MIDDLE AGES" characterized by significant cultural, political, and economic changes across Europe. This soft cotton tee showcases the distinctive OEUVRE logo in a captivating floral motif. As an iconic emblem of effortless style, it effortlessly pairs with our range of house denim, cargos, or shorts, offering endless possibilities for chic styling.',
+    image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7267.jpg",
+    price: "₹3990",
+  },
+  {
+    title: "Oeuvre Roman Medieval Tee (W)",
+    description:
+      'Blending timeless luxury with the "MIDDLE AGES" characterized by significant cultural, political, and economic changes across Europe. This soft cotton tee showcases the distinctive OEUVRE logo in a captivating floral motif. As an iconic emblem of effortless style, it effortlessly pairs with our range of house denim, cargos, or shorts, offering endless possibilities for chic styling.',
+    image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7644.jpg",
+    price: "₹3990",
+  },
+  {
     title: "Oeuvre London Bowling Shirt ",
     description:
       "Featuring a distinctive notched label and a  button-down closure in monochrome, this shirt serves as the canvas for striking typography, all crafted from lightweight 100% cotton twill. For a coordinated aesthetic, consider pairing it with denim, shorts, cargos and trouser ensemble.",
     image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7943.jpg",
-    price: "₹3990",
-  },
-  // {
-  //   title: "Oeuvre Core Logo Tee",
-  //   description:
-  //     "asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad",
-  //   image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7399.jpg",
-  //   price: "₹3990",
-  // },
-  // {
-  //   title: "Oeuvre Core Logo Tee",
-  //   description:
-  //     "asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad",
-  //   image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7399.jpg",
-  //   price: "₹3990",
-  // },
-  {
-    title: "Oeuvre Roman Medieval Tee",
-    description:
-      'Blending timeless luxury with the "MIDDLE AGES" characterized by significant cultural, political, and economic changes across Europe. This soft cotton tee showcases the distinctive OEUVRE logo in a captivating floral motif. As an iconic emblem of effortless style, it effortlessly pairs with our range of house denim, cargos, or shorts, offering endless possibilities for chic styling.',
-    image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7537.jpg",
-    price: "₹3990",
-  },
-  {
-    title: "Oeuvre Core Logo Tee",
-    description:
-      "asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad",
-    image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7399.jpg",
-    price: "₹3990",
-  },
-  {
-    title: "Oeuvre Core Logo Tee",
-    description:
-      "asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad asadasd adas d ad sad asd as das das d a sa ad",
-    image: "https://ik.imagekit.io/designkrunch/Oeuvre/Products/051A7399.jpgg",
     price: "₹3990",
   },
 ];
