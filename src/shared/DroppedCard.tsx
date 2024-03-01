@@ -7,7 +7,7 @@ const DroppedCard = ({
   width,
   className,
   onclick,
-  styleImage
+  styleImage,
 }: {
   data: any;
   height: number;
@@ -19,7 +19,7 @@ const DroppedCard = ({
   return (
     <div className={`flex flex-col gap-y-5 h-full ${className}`}>
       <div
-        className="relative group h-full overflow-hidden rounded-[20px]"
+        className={`relative group overflow-hidden rounded-[20px] ${styleImage}`}
         onClick={onclick}
       >
         <Img

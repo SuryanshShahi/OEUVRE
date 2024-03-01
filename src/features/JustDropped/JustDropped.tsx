@@ -28,7 +28,7 @@ const JustDropped = () => {
         velit mauris.
       </p>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 !mt-20 justify-between sm:gap-5 gap-16">
-        <div className="flex flex-col sm:gap-5 gap-16">
+        <div className="md:flex hidden flex-col sm:gap-5 gap-16">
           <DroppedCard
             data={droppedData[0]}
             height={450}
@@ -45,11 +45,27 @@ const JustDropped = () => {
           />
         </div>
         <DroppedCard
+          data={droppedData[0]}
+          height={500}
+          width={407}
+          className="md:hidden"
+          onclick={() => setIsActive(0)}
+          styleImage="h-[450px]"
+        />
+        <DroppedCard
+          data={droppedData[1]}
+          height={500}
+          width={407}
+          className="md:hidden"
+          onclick={() => setIsActive(1)}
+          styleImage="h-[450px]"
+        />
+        <DroppedCard
           data={droppedData[2]}
           height={920}
           width={600}
           onclick={() => setIsActive(2)}
-          className="col-span-2"
+          className="sm:col-span-2"
           styleImage="h-[920px]"
         />
         {/* <div className="md:flex hidden flex-col sm:gap-5 gap-16">
