@@ -18,13 +18,37 @@ const NewsLetter = () => {
           and access exclusive deals.
         </div>
         <div className="relative w-fit mx-auto">
-          <Button className="py-[10px] !px-11 absolute top-[1px] !text-white right-0 !bg-black">
-            Send
-          </Button>
-          <input
-            className="outline-none rounded-full text-black pl-5 pr-[8rem] h-12 max-w-[512px] w-[calc(100vw-40px)]"
-            placeholder="Enter Email"
-          />
+          <form
+            name="contact"
+            method="POST"
+            enctype="multipart/form-data"
+            accept-charset="UTF-8"
+            className="form u-mt-5 relative"
+            onSubmit={(e) => {
+              e.preventDefault();
+              close();
+            }}
+            netlify
+          >
+            <div className="form_group">
+              <input
+                type="email"
+                className="form__input outline-none rounded-full text-black pl-5 pr-[8rem] h-12 max-w-[512px] w-[calc(100vw-40px)]"
+                placeholder="Enter Email"
+                id="email"
+                name="Email"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="py-[8px] rounded-full !px-11 absolute top-[2.5px] !text-white right-[2.5px] !bg-black"
+            >
+              Send
+            </button>
+            <input type="hidden" name="_gotcha" />
+          </form>
         </div>
         <div>SIGN UP AND SAVE</div>
       </div>
