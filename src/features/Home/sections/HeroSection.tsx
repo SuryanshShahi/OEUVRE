@@ -2,7 +2,9 @@ import Img from "@/shared/Img";
 import React from "react";
 import { motion } from "framer-motion";
 import { HeroVariants } from "@/utils/framerVariants";
+import { useRouter } from "next/router";
 const HeroSection = () => {
+  const router = useRouter();
   return (
     <motion.div
       viewport={{ once: true }}
@@ -41,7 +43,12 @@ const HeroSection = () => {
             Meticulously curated with precision for those with a penchant for
             luxury.
           </p>
-          <div className="text-xl bottom-3 right-8 absolute">Shop Soon</div>
+          <div
+            className="text-xl bottom-3 right-8 absolute"
+            onClick={() => router.push("/dropped")}
+          >
+            Shop Soon
+          </div>
         </motion.div>
 
         <motion.div

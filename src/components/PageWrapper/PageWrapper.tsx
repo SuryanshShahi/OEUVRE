@@ -43,6 +43,10 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
         clickables={[
           "a",
           "img",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
           "label[for]",
           "select",
           "textarea",
