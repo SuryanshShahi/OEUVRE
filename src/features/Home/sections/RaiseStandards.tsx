@@ -13,8 +13,7 @@ const RaiseStandards = () => {
     >
       <div className="text-center max-w-[850px] mx-auto space-y-4">
         <div className="text-5xl font-bold leading-[60px] text-gradient">
-          Enhance your{" "}
-          <span className="text-green-gradient">style prowess</span>
+          Enhance your style prowess
         </div>
         <p className="text-secondary">
           At Oeuvre, we believe in making a statement beyond fashion. Our

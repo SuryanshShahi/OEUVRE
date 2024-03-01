@@ -44,8 +44,7 @@ const HouseWild = () => {
         />
         <div className="text-xs text-heading">Own the Future. Own Oeuvre.</div>
         <div className="text-3xl font-bold my-2 text-gradient">
-          Crafted for the{" "}
-          <span className="text-green-gradient">discerning</span>
+          Crafted for the discerning
         </div>
         <div className="">
           Founded on the belief that fashion is a canvas for self-expression,
@@ -80,7 +79,7 @@ const HouseWild = () => {
             {data[isActive]?.tabContent}
           </div>
         </div> */}
-        <Button className="w-full mt-10">SHOW YOUR EXCITEMENT</Button>
+        <Button className="w-full mt-10">SHOP THE FIRST DROP</Button>
       </motion.div>
     </motion.div>
   );
