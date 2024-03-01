@@ -21,14 +21,14 @@ const NewsLetter = () => {
           <form
             name="contact"
             method="POST"
-            enctype="multipart/form-data"
+            encType="multipart/form-data"
             accept-charset="UTF-8"
             className="form u-mt-5 relative"
             onSubmit={(e) => {
               e.preventDefault();
               close();
             }}
-            netlify
+            data-netlify="true"
           >
             <div className="form_group">
               <input
