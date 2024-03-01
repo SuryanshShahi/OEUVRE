@@ -31,24 +31,28 @@ const JustDropped = () => {
         <div className="flex flex-col sm:gap-5 gap-16">
           <DroppedCard
             data={droppedData[0]}
-            height={500}
+            height={450}
             width={407}
             onclick={() => setIsActive(0)}
+            styleImage="h-[450px]"
           />
           <DroppedCard
             data={droppedData[1]}
-            height={500}
+            height={450}
             width={407}
             onclick={() => setIsActive(1)}
+            styleImage="h-[450px]"
           />
         </div>
         <DroppedCard
           data={droppedData[2]}
-          height={1027}
-          width={387}
+          height={920}
+          width={600}
           onclick={() => setIsActive(2)}
+          className="col-span-2"
+          styleImage="h-[920px]"
         />
-        <div className="md:flex hidden flex-col sm:gap-5 gap-16">
+        {/* <div className="md:flex hidden flex-col sm:gap-5 gap-16">
           <DroppedCard
             data={droppedData[3]}
             height={500}
@@ -61,8 +65,8 @@ const JustDropped = () => {
             width={407}
             onclick={() => setIsActive(4)}
           />
-        </div>
-        <DroppedCard
+        </div> */}
+        {/* <DroppedCard
           data={droppedData[3]}
           height={500}
           width={407}
@@ -75,37 +79,42 @@ const JustDropped = () => {
           width={407}
           className="md:hidden"
           onclick={() => setIsActive(6)}
-        />
+        /> */}
         <DroppedCard
           data={droppedData[5]}
           className="sm:col-span-2"
           height={500}
           width={858}
           onclick={() => setIsActive(5)}
+          styleImage="h-[500px]"
         />
         <DroppedCard
           data={droppedData[6]}
           height={500}
           width={387}
           onclick={() => setIsActive(6)}
+          styleImage="h-[500px]"
         />
         <DroppedCard
           data={droppedData[7]}
           height={500}
           width={387}
           onclick={() => setIsActive(7)}
+          styleImage="h-[500px]"
         />
         <DroppedCard
           data={droppedData[8]}
           height={500}
           width={387}
           onclick={() => setIsActive(8)}
+          styleImage="h-[500px]"
         />
         <DroppedCard
           data={droppedData[9]}
           height={500}
           width={387}
           onclick={() => setIsActive(9)}
+          styleImage="h-[500px]"
         />
       </div>
 

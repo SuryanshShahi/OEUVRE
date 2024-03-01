@@ -7,12 +7,14 @@ const DroppedCard = ({
   width,
   className,
   onclick,
+  styleImage
 }: {
   data: any;
   height: number;
   width: number;
   className?: string;
   onclick: () => void;
+  styleImage?: string;
 }) => {
   return (
     <div className={`flex flex-col gap-y-5 h-full ${className}`}>
@@ -26,7 +28,7 @@ const DroppedCard = ({
           width={width}
           alt=""
           isLocal
-          className="h-full w-full object-cover rounded-[20px] duration-700 group-hover:scale-110"
+          className={`h-full w-full object-cover rounded-[20px] duration-700 group-hover:scale-110 ${styleImage}`}
         />
         <div className="duration-700 h-full w-full sm:gap-y-6 gap-y-2 lg:px-10 px-5 pb-5 sm:flex hidden flex-col justify-end top-0 rounded-2xl bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_40%,#000_100%)] absolute">
           <div className="lg:text-4xl text-2xl font-bold">{data?.title}</div>
