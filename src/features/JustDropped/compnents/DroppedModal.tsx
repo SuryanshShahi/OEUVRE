@@ -2,8 +2,11 @@ import Img from "@/shared/Img";
 import Modal from "@/shared/Modal/Modal";
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
+import Button from "@/shared/Button/Button";
+import useJustDropped from "../views/useJustDropped";
 
 const DroppedModal = ({ close }: { close: () => void }) => {
+  const { values, handleChange, handleSubmit } = useJustDropped(close);
   return (
     <Modal
       onClose={close}
@@ -36,45 +39,29 @@ const DroppedModal = ({ close }: { close: () => void }) => {
           <span className="text-white text-xl">we’ll notify</span> you promptly
           when it’s ready to level up your street style!
         </p>
-        <form
-          name="contact"
-          method="POST"
-          encType="multipart/form-data"
-          accept-charset="UTF-8"
-          className="form u-mt-5"
-          onSubmit={(e) => {
-            e.preventDefault();
-            close();
-          }}
-          data-netlify="true"
-        >
-          <div className="form_group">
-            <input
-              type="email"
-              className="form__input w-full h-12 rounded-xl border border-white bg-[#2b2b2b] text-white outline-none px-4"
-              placeholder="Enter Email"
-              id="email"
-              name="Email"
-              required
+        <form className="space-y-4" onSubmit={handleSubmit}>
+          <input
+            type="email"
+            name="email"
+            value={values?.email}
+            onChange={handleChange}
+            className="w-full h-12 rounded-xl border border-white bg-[#2b2b2b] text-white outline-none px-4"
+            placeholder="Enter Email"
+            required
+          />
+          <Button
+            type="submit"
+            className="flex items-center rounded-lg gap-x-2 !text-black bg-white w-full py-2 px-3 justify-center"
+          >
+            <Img
+              src="/images/adduser.png"
+              height={18}
+              width={18}
+              alt=""
+              isLocal
             />
-          </div>
-
-          <div className="form__group mt-4">
-            <button
-              type="submit"
-              className="flex items-center rounded-lg gap-x-2 !text-black bg-white w-full py-2 px-3 justify-center"
-            >
-              <Img
-                src="/images/adduser.png"
-                height={18}
-                width={18}
-                alt=""
-                isLocal
-              />
-              Join the Waitlist
-            </button>
-          </div>
-          <input type="hidden" name="_gotcha" />
+            Join the Waitlist
+          </Button>
         </form>
       </div>
     </Modal>

@@ -5,6 +5,8 @@ import { IoIosArrowUp } from "react-icons/io";
 import { metaContent } from "@/utils/constant";
 import Head from "next/head";
 import AnimatedCursor from "react-animated-cursor";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 interface IPageWraps {
   wrapperClass?: string;
   isBanner?: boolean;
@@ -18,15 +20,17 @@ const PageWrapper: FC<PropsWithChildren<IPageWraps>> = ({
 }) => {
   const [isActive, setIsActive] = useState(false);
   const slideNav = () => {
-    if (window.scrollY >= 100) {
+    if (window?.scrollY >= 100) {
       setIsActive(true);
     } else {
       setIsActive(false);
     }
   };
   typeof window !== "undefined" && window.addEventListener("scroll", slideNav);
+
   return (
     <Fragment>
+      <ToastContainer />
       <AnimatedCursor
         innerSize={6}
         outerSize={40}
