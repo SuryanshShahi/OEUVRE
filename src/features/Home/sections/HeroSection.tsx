@@ -56,12 +56,17 @@ const HeroSection = () => {
           variants={HeroVariants.CARD_2}
           whileInView="show"
           initial="hidden"
-          className="card-type-1 max-[1024px]:order-last max-[640px]:order-none h-[400px] rounded-2xl bg-cover w-full"
+          className="card-type1 max-[1024px]:order-last relative max-[640px]:order-none h-[400px] rounded-2xl bg-cover w-full"
           style={{
             backgroundImage:
               "url('https://ik.imagekit.io/designkrunch/Oeuvre/051A4361.jpg')",
           }}
-        ></motion.div>
+        >
+          <div className="absolute top-0 flex right-0 w-2/3 md:w-1/2">
+            <div className="bg-black rounded-es-2xl h-10 w-1/2"></div>
+            <div className="bg-black rounded-es-2xl h-20 w-1/2"></div>
+          </div>
+        </motion.div>
         <motion.div
           viewport={{ once: true }}
           variants={HeroVariants.CARD_3}
