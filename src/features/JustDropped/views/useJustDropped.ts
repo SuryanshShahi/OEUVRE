@@ -8,7 +8,7 @@ const useJustDropped = (close: () => void) => {
   };
   const { values, handleChange, handleSubmit } = useFormik({
     initialValues: initialValues,
-    onSubmit: async (data) => {
+    onSubmit: (data) => {
       var templateParams = {
         email: data?.email,
       };

@@ -1,7 +1,4 @@
-import { RxCross2 } from "react-icons/rx";
 import DroppedCard from "@/shared/DroppedCard";
-import Img from "@/shared/Img";
-import Modal from "@/shared/Modal/Modal";
 import { droppedData } from "@/utils/constant";
 import { HeroVariants } from "@/utils/framerVariants";
 import useScrollHidden from "@/utils/hooks/useScrollHidden";
@@ -24,7 +21,8 @@ const JustDropped = () => {
         SPRING-SUMMER 2024 COLLECTION
       </h1>
       <p className="md:text-2xl">
-      Spring has sprung, and the Sunshine&apos;s calling! Shop the Just Dropped Collection, made in London with 100% premium cotton.
+        Spring has sprung, and the Sunshine&apos;s calling! Shop the Just
+        Dropped Collection, made in London with 100% premium cotton.
       </p>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 !mt-20 justify-between sm:gap-5 gap-16">
         <div className="md:flex hidden flex-col sm:gap-5 gap-16">
@@ -67,34 +65,6 @@ const JustDropped = () => {
           className="sm:col-span-2"
           styleImage="h-[920px]"
         />
-        {/* <div className="md:flex hidden flex-col sm:gap-5 gap-16">
-          <DroppedCard
-            data={droppedData[3]}
-            height={500}
-            width={407}
-            onclick={() => setIsActive(3)}
-          />
-          <DroppedCard
-            data={droppedData[4]}
-            height={500}
-            width={407}
-            onclick={() => setIsActive(4)}
-          />
-        </div> */}
-        {/* <DroppedCard
-          data={droppedData[3]}
-          height={500}
-          width={407}
-          className="md:hidden"
-          onclick={() => setIsActive(5)}
-        />
-        <DroppedCard
-          data={droppedData[4]}
-          height={500}
-          width={407}
-          className="md:hidden"
-          onclick={() => setIsActive(6)}
-        /> */}
         <DroppedCard
           data={droppedData[5]}
           className="sm:col-span-2"
